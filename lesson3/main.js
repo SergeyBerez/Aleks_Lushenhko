@@ -4,10 +4,10 @@ let div = document.querySelector('.modal');
 
 btn.onclick = hide;
 function hide() {
-  div.hidden = true;
+  div.style.opacity = '1';
 }
 btnshow.onclick = show;
 
 function show() {
-  div.hidden = false;
+  div.style.opacity = '0';
 }
