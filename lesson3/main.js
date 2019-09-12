@@ -1,13 +1,16 @@
 let btn = document.querySelector('#btn');
 let btnshow = document.querySelector('#show');
 let div = document.querySelector('.modal');
+let overlay = document.querySelector('.overlay');
 
-btn.onclick = hide;
-function hide() {
-  div.style.opacity = '1';
+btnshow.onclick = open;
+
+function open() {
+  overlay.style.display = 'block';
+  div.style.display = 'block';
 }
-btnshow.onclick = show;
-
-function show() {
-  div.style.opacity = '0';
+overlay.onclick = close;
+function close(arguments) {
+  this.style.display = 'none';
+  div.style.display = 'none';
 }
