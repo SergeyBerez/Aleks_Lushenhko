@@ -1,0 +1,35 @@
+body {
+}
+.span-togle-cont {
+  display: block;
+  cursor: pointer;
+  color: rgb(13, 42, 233);
+  font-size: 30px;
+}
+.content {
+  width: 600px;
+  margin: 50px;
+  background: rgba(128, 128, 128, 0.541);
+}
+.content-show {
+  border: 1px solid #000;
+  text-indent: 50px;
+  text-align: justify;
+  background: linear-gradient(
+    to top,
+    rgb(11, 160, 11) 10%,
+    rgb(24, 226, 68) 40%,
+    rgb(122, 240, 122) 70%
+  );
+  /* display: none; */
+}
+.active {
+  font-weight: bold;
+}
+.show {
+  display: block;
+}
+.close {
+  display: none;
+}
+
